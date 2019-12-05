@@ -43,6 +43,7 @@ class MoviesAdapter(private val moviesList: ArrayList<Movie>) : RecyclerView.Ada
         holder.itemView.setOnClickListener({
             Toast.makeText(context, holder.title.text, Toast.LENGTH_LONG).show()
         })
+
     }
 
     override fun getItemCount(): Int {

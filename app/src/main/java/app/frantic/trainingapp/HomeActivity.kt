@@ -3,6 +3,7 @@ package app.frantic.trainingapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import app.frantic.trainingapp.network.FlowerActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -18,6 +19,11 @@ class HomeActivity : AppCompatActivity() {
 
         btn_room.setOnClickListener {
             val i = Intent(this,MainActivity::class.java)
+            startActivity(i)
+        }
+
+        btn_network.setOnClickListener {
+            val i = Intent(this,FlowerActivity::class.java)
             startActivity(i)
         }
     }

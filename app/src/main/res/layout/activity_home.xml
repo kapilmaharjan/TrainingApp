@@ -21,5 +21,12 @@
         android:text="Room"
         android:layout_gravity="center"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network"
+        android:layout_gravity="center"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

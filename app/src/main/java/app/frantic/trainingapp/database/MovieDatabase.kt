@@ -13,7 +13,9 @@ abstract class MovieDatabase:RoomDatabase() {
 
     companion object {
         private var INSTANCE: MovieDatabase? = null
+
         fun getDataBase(context: Context): MovieDatabase {
+
             if (INSTANCE == null) {
                 INSTANCE = Room.databaseBuilder(context.applicationContext, MovieDatabase::class.java, "movie-db")
                     .allowMainThreadQueries().build()

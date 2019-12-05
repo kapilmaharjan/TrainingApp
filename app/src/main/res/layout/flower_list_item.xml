@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_flower_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flower"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textColor="#616161"
+            android:textSize="16sp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_flower_image"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="centerCrop"
+        android:layout_height="75dp" />
+</RelativeLayout>
